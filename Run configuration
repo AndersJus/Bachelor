@@ -1,0 +1,39 @@
+To run the application.
+Open CMD and move into the folder of the project.
+Open the Virtual manager devicer from Android Studio and start the virtual mobile.
+In the CMD type "npm start"
+When it is running press "A" to connect to the virtual mobile device.
+
+
+Run server:
+change into C:\Users\Bruger\Desktop\Bachelor\backend
+Run command: node index.js in terminal
+
+
+Google Cloud:
+1. Open "Google Cloud SDK Shell"
+2. Run command: "gcloud auth login"
+3. Login through website that opens
+4. Validate the current running project or use command: "gcloud config set project chatbotbachelor"
+5. Generate access token: "gcloud auth print-access-token"
+
+curl -X POST http://localhost:3000/ask-question -H "Content-Type: application/json" -d "{\"question\": \"What is the capital of France?\"}"
+
+
+
+
+
+
+TODO:
+- Kig på AI og få den integreret eller find et alternativ
+
+
+
+
+Done:
+- Fix message system, lige nu bliver alle beskeder læst som afsendte beskeder fra lægen 
+-  Afsender er nu brugeren og den eneste måde at tilføje beskeder fra Doctor er pt. igennem databasen og tilføje dem manuelt
+-  Samt det er nu en del af beskeden hvem "sender" er
+- "Grey out" data under "Profil" som ikke kan ændres af brugeren for at tydeliggøre det
+- Lav en "Admin" page på appen med nye logins så læger har mulighed for at kunne tilføje data til samtlige brugere
+    - Skal indeholde en måde hvorpå doctor sender beskeder som doctor for at tydeliggøre hvem det er fra i besked delen
